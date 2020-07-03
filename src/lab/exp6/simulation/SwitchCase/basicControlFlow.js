@@ -307,9 +307,9 @@ window.view = {
     if (model.inputNumber > 7) {
       if (this.nextSiblingElement.id === "holidayId")
         this.codeExecutionWithColourAndId("elseIfId");
-      else if (this.nextSiblingElement.id === "workingdayId")
+      if (this.nextSiblingElement.id === "workingdayId")
         this.codeExecutionWithColourAndId("elseId");
-      else if (this.nextSiblingElement.id === "invalidIPId") {
+      if (this.nextSiblingElement.id === "invalidIPId") {
         this.codeExecutionWithColour();
         this.setInnerHtml("outputDayId", "INVALID INPUT");
       }
