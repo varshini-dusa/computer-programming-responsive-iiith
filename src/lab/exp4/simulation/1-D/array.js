@@ -168,6 +168,11 @@ window.view = {
     var element = document.getElementById("sortingDiv").childNodes;
     document.getElementById("key").innerHTML =
       element[this.i].firstChild.innerHTML;
+    document
+      .getElementById("key")
+      .append(
+        "<img src='https://www.freepnglogos.com/uploads/arrow-symbol-png/arrow-symbol-arrow-image-clipart-images--22.png'>"
+      );
     var elements = document.getElementById("sortingDiv").childNodes;
     elements[this.i].firstChild.style.background = "#F5B941";
   },
